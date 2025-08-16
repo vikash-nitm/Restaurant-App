@@ -36,7 +36,15 @@ app.use(express.json());
 // app.options("*", cors());
 //urlencoded ka use krte hai data kis type ka hone wla hai.
 app.use(express.urlencoded({extended:true}));
-app.use("/api/v1/reservation",reservationRouter)
+app.use("/api/v1/reservation",reservationRouter);
+
+app.get("/",(req,res,next)=>{
+  return res.status(200).json({
+    success:true,
+    message:"HELLO WORLD",
+  });
+});
+
 dbConnection();
 app.use(errorMiddleware);
 
