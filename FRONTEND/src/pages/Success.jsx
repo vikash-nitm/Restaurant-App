@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from "react"
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { HiArrowRight } from "react-icons/hi2";  
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,8 @@ const Success=()=>{
             <img src="/sandwich.png" alt="success"/>
             <h1>Redirecting to Home in {countdown} second...</h1>  
             <Link to={"/"}>
-                Back to Home <HiOutlineArrowNarrowRight/>
+                {/* Back to Home <HiOutlineArrowNarrowRight/> */}
+                Back to Home <HiArrowRight />
                 </Link>  
             </div>
         </section>
