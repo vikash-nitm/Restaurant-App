@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+// ❌ galat
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+
+// ✅ sahi (HeroIcons v2)
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi2";
+
 const NotFound=()=>{
     return(
         <>
