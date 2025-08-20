@@ -20,7 +20,7 @@ const navigate=useNavigate();
    const handleReservation= async(e)=>{
     e.preventDefault();
     try{
-        const {data}=await axios.post("http://localhost:4000/api/v1/reservation/send",
+        const {data}=await axios.post("https://restaurant-backend-9clj.onrender.com/api/v1/reservation/send",
         {firstName,lastName,email,phone,date,time},
        {
         headers:{
